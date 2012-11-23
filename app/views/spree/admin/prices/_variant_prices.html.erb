@@ -1,0 +1,10 @@
+<h5><%= variant.sku %> (<%= variant.is_master? ? t(:master) : variant.options_text %>)</h5>
+<ul>
+<% supported_currencies.each do |currency| %>
+  <li>
+    <% price = variant.price_in(currency.iso_code) %>
+    <%= text_field_tag("vp[#{variant.id}][#{currency.iso_code}]", (price ? price.display_amount : '')) %>
+    <%= currency.iso_code %>
+  </li>
+<% end %>
+</ul>

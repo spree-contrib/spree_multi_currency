@@ -1,0 +1,15 @@
+@import "./variables.css.scss"; // Must call explicit path or else extension integration tests cannot import file.
+
+nav #main-nav-bar {
+  &#currency-select {
+    float: right;
+    margin-right: 15px;
+
+    label {
+      color: $link_text_color;
+      font-size: $horizontal_navigation_font_size;
+      font-weight: normal;
+    }
+  }
+}
+

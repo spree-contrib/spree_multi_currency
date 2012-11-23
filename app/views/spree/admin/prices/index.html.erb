@@ -1,0 +1,12 @@
+<%= render :partial => 'spree/admin/shared/product_sub_menu' %>
+
+<%= render :partial => 'spree/admin/shared/product_tabs', :locals => {:current => 'Prices'} %>
+
+<%= form_tag do %>
+  <%= render :partial => 'variant_prices', :locals => { :variant => @product.master } %>
+
+  <% @product.variants.each do |variant| %>
+    <%= render :partial => 'variant_prices', :locals => { :variant => variant } %>
+  <% end %>
+  <%= submit_tag %>
+<% end %>

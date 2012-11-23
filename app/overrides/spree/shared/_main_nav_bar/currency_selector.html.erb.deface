@@ -1,0 +1,11 @@
+<!-- insert_bottom '#main-nav-bar' -->
+<% if Spree::Config[:show_currency_selector] && supported_currencies.size > 1 %>
+  <li id="currency-select" style="float: right; margin-right: 10px;" data-hook>
+    <%= form_tag(set_currency_path(:format => :html)) do %>
+      <label for="currency"><%= t(:currency) %>:</label> <%= select_tag(:currency, options_for_select(supported_currencies, current_currency), :data => { :href => set_currency_path(:format => :json) }) %>
+      <noscript>
+        <%= submit_tag %>
+      </noscript>
+    <% end %>
+  </li>
+<% end %>
