@@ -1,4 +1,4 @@
-Spree::Core::ControllerHelpers::Common.class_eval do
+Spree::Core::ControllerHelpers::Order.class_eval do
   def current_currency
     # ensure session currency is supported
     #
