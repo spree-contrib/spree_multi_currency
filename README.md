@@ -26,11 +26,9 @@ Run:
     $ bundle install
 
 
-and the following to app/assets/javascripts/store/all.js:
+And then run:
 
-```ruby
-//= require store/spree_multi_currency
-```
+    $ rails generate spree_multi_currency:install
 
 
 TODO
