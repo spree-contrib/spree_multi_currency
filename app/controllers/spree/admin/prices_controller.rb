@@ -9,7 +9,7 @@ module Spree
           if variant
             supported_currencies.each do |currency|
               price = variant.price_in(currency.iso_code)
-              price.price = ((prices[currency.iso_code].nil? || prices[currency.iso_code].empty?) ? nil : prices[currency.iso_code])
+              price.price = (prices[currency.iso_code].blank? ? nil : prices[currency.iso_code])
               price.save! if price.changed?
             end
           end
