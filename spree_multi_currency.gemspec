@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_multi_currency'
-  s.version     = '1.3.0'
+  s.version     = '2.0.7'
   s.summary     = 'Spree Commerce Extension - Provide currency customization'
   s.description = 'http://www.spreecommerce.com'
   s.required_ruby_version = '>= 1.8.7'
@@ -16,7 +16,10 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.0.0'
+  spree_version = '~> 2.0.7'
+  s.add_dependency 'spree_core', spree_version
+  s.add_dependency 'spree_frontend', spree_version
+  s.add_dependency 'spree_backend', spree_version
 
   s.add_development_dependency 'capybara', '1.0.1'
   s.add_development_dependency 'factory_girl', '~> 2.6.4'
