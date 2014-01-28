@@ -7,4 +7,3 @@ $ ->
         currency: $(this).val()
     ).done ->
       window.location.reload()
-

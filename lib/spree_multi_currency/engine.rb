@@ -4,8 +4,8 @@ module SpreeMultiCurrency
     isolate_namespace Spree
     engine_name 'spree_multi_currency'
 
-    config.autoload_paths += %W(#{config.root}/lib)
-
+    require 'spree/core/currency_helpers'
+    
     # use rspec for tests
     config.generators do |g|
       g.test_framework :rspec
