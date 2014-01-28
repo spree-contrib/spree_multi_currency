@@ -21,7 +21,7 @@ describe "Variant Prices" do
       fill_in "vp_#{product.master.id}_USD", :with => "29.95"
       fill_in "vp_#{product.master.id}_EUR", :with => "21.94"
 
-      click_button "Save changes"
+      click_button "Update"
       expect(page).to have_content "Prices Saved"
     end
   end
