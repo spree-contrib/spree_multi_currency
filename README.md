@@ -3,8 +3,6 @@ SpreeMultiCurrency
 
 Provides UI to allow configuring multiple currencies in Spree.
 
-NOTE: This extension is intended to be used with Spree 1.3 only.  It will not function with Spree 1.2 and below.
-
 This provides 3 preferences:
 
 * allow_currency_change - Allow the users to change their currency via the currency set action.
