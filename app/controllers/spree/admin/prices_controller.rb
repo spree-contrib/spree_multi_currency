@@ -3,7 +3,7 @@ module Spree
     class PricesController < ResourceController
       belongs_to 'spree/product', :find_by => :permalink
 
-      def create
+      def create        
         params[:vp].each do |variant_id, prices|
           variant = Spree::Variant.find(variant_id)
           if variant
@@ -14,7 +14,8 @@ module Spree
             end
           end
         end
-        render :action => :index
+        flash[:success] = Spree.t('notice.prices_saved')
+        redirect_to admin_product_path(parent)
       end
     end
   end
