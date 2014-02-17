@@ -1,5 +1,5 @@
 $ ->
-  $('#currency-select select').change ->
+  $('#currency').change ->
     $.ajax(
       type: 'POST'
       url: $(this).data('href')
