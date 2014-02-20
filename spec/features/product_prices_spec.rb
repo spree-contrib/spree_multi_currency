@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "Product with prices in multiple currencies" do
 
-  context "with USD,EUR and GBP as currencies" do
+  context "with USD, EUR and GBP as currencies" do
     let!(:product) {create(:product)}
 
     before do
@@ -19,10 +19,8 @@ describe "Product with prices in multiple currencies" do
       visit spree.product_path(product)
       expect(page).to have_content("$19.99")
       select "EUR",:from => "currency"
-      wait_for_ajax
       expect(page).to have_content("€16.00")
       select "GBP",:from => "currency"
-      wait_for_ajax
       expect(page).to have_content("£23.00")
     end
 
