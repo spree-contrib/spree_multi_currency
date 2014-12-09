@@ -7,7 +7,7 @@ This provides 3 preferences:
 
 * allow_currency_change - Allow the users to change their currency via the currency set action.
 * show_currency_selector - Display the currency selector in the main nav bar.  This will only display if there are multiple supported currencies, and allow_currency_change is on.
-* supported_currencies - A comma separated list of 
+* supported_currencies - A comma separated list of
 
 Example
 =======
@@ -15,7 +15,7 @@ Example
 To install you'll need to add the following to your Gemfile:
 
 ```ruby
-gem 'spree_multi_currency', :github => "spree/spree_multi_currency"
+gem 'spree_multi_currency', github: 'spree/spree_multi_currency', branch: '2-4-stable'
 ```
 
 
