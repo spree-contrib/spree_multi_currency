@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.version     = '2.2.0'
   s.summary     = 'Spree Commerce Extension - Provide currency customization'
   s.description = 'http://www.spreecommerce.com'
-  s.required_ruby_version = '>= 1.8.7'
+  s.required_ruby_version = '>= 2.1.0'
 
   s.author    = 'Gregor MacDougall'
   s.email     = 'gmacdougall@freerunningtechnologies.com'
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.4.0.beta'
+  s.add_dependency 'spree_core', '~> 3.0.0.beta'
 
   s.add_development_dependency 'capybara', '~> 2.4'
   s.add_development_dependency 'coffee-rails'
