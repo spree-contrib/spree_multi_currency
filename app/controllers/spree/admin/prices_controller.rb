@@ -1,9 +1,9 @@
 module Spree
   module Admin
     class PricesController < ResourceController
-      belongs_to 'spree/product', :find_by => :slug
+      belongs_to 'spree/product', find_by: :slug
 
-      def create        
+      def create
         params[:vp].each do |variant_id, prices|
           variant = Spree::Variant.find(variant_id)
           if variant

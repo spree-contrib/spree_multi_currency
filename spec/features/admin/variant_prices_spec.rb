@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "Variant Prices" do
   stub_authorization!
 
-  let(:product) {create(:product)}
+  let(:product) { create(:product) }
 
   context "with USD and EUR as currencies" do
     before do
@@ -18,8 +18,8 @@ describe "Variant Prices" do
       expect(page).to have_content "USD"
       expect(page).to have_content "EUR"
 
-      fill_in "vp_#{product.master.id}_USD", :with => "29.95"
-      fill_in "vp_#{product.master.id}_EUR", :with => "21.94"
+      fill_in "vp_#{product.master.id}_USD", with: "29.95"
+      fill_in "vp_#{product.master.id}_EUR", with: "21.94"
 
       click_button "Update"
       expect(page).to have_content "Prices Saved"

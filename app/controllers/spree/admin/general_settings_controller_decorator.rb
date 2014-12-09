@@ -1,12 +1,13 @@
 Spree::Admin::GeneralSettingsController.class_eval do
   before_filter :update_currency_settings, only: :update
 
-  def render *args
+  def render(*args)
     @preferences_currency |= [:allow_currency_change, :show_currency_selector, :supported_currencies]
     super
   end
 
   private
+
     def update_currency_settings
       params.each do |name, value|
         next unless Spree::Config.has_preference? name

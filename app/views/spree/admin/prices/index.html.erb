@@ -1,18 +1,17 @@
-<%= render :partial => 'spree/admin/shared/product_sub_menu' %>
-
-<%= render :partial => 'spree/admin/shared/product_tabs', :locals => {:current => 'Prices'} %>
+<%= render partial: 'spree/admin/shared/product_sub_menu' %>
+<%= render partial: 'spree/admin/shared/product_tabs', locals: { current: 'Prices' } %>
 
 <%= form_tag do %>
   <fieldset class="no-border-top">
-    <%= render :partial => 'variant_prices', :locals => { :variant => @product.master } %>
+    <%= render partial: 'variant_prices', locals: { variant: @product.master } %>
     <% @product.variants.each do |variant| %>
-      <%= render :partial => 'variant_prices', :locals => { :variant => variant } %>
+      <%= render partial: 'variant_prices', locals: { variant: variant } %>
     <% end %>
     <div class="clear"></div>
     <div class="form-buttons filter-actions actions" data-hook="buttons">
       <%= button Spree.t('actions.update'), 'icon-refresh' %>
       <span class="or"><%= Spree.t(:or) %></span>
-      <%= button_link_to Spree.t('actions.cancel'), admin_product_path(@product), :icon => 'icon-remove' %>
+      <%= button_link_to Spree.t('actions.cancel'), admin_product_path(@product), icon: 'icon-remove' %>
     </div>
   </fieldset>
 <% end %>

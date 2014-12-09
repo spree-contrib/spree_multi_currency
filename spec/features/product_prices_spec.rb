@@ -15,12 +15,12 @@ describe "Product with prices in multiple currencies" do
       create(:price, variant: product.master, currency: 'GBP', amount: 23.00)
     end
 
-    it "can switch by currency", :js => true do
+    it "can switch by currency", js: true do
       visit spree.product_path(product)
       expect(page).to have_content("$19.99")
-      select "EUR",:from => "currency"
+      select "EUR",from: "currency"
       expect(page).to have_content("€16.00")
-      select "GBP",:from => "currency"
+      select "GBP",from: "currency"
       expect(page).to have_content("£23.00")
     end
 
