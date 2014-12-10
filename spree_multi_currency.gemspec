@@ -9,19 +9,20 @@ Gem::Specification.new do |s|
   s.name        = 'spree_multi_currency'
   s.version     = SpreeMultiCurrency.version
   s.summary     = 'Spree Commerce Extension - Provide currency customization'
-  s.description = 'http://www.spreecommerce.com'
-  s.required_ruby_version = '>= 1.8.7'
+  s.description = s.summary
+  s.required_ruby_version = '>= 1.9.3'
 
-  s.author    = 'Gregor MacDougall'
-  s.email     = 'gmacdougall@freerunningtechnologies.com'
-  s.homepage  = 'http://www.freerunningtechnologies.com'
+  s.authors   = ['Gregor MacDougall', 'Spree Community']
+  s.email     = ['gmacdougall@freerunningtechnologies.com', 'gems@spreecommerce.com']
+  s.homepage  = 'https://github.com/spree-contrib/spree_multi_currency'
+  s.license   = 'BSD-3'
 
-  s.files       = `git ls-files`.split("\n")
-  s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.files        = `git ls-files`.split("\n")
+  s.test_files   = `git ls-files -- spec/*`.split("\n")
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.3.0'
+  s.add_runtime_dependency 'spree_core', '~> 2.3.0'
 
   s.add_development_dependency 'capybara', '~> 2.1'
   s.add_development_dependency 'coffee-rails'
