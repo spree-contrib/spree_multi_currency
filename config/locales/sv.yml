@@ -1,0 +1,10 @@
+---
+sv:
+  spree:
+    master: Master
+    prices: Priser
+    show_currency_selector: Visa valuta väljaren
+    supported_currencies: Valutor som stöds
+    allow_currency_change: Tillåt valuta ändring
+    notice:
+      prices_saved: Priserna har nu sparats
