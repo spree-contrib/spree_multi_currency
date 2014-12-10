@@ -6,12 +6,11 @@ module Spree
       def create
         params[:vp].each do |variant_id, prices|
           variant = Spree::Variant.find(variant_id)
-          if variant
-            supported_currencies.each do |currency|
-              price = variant.price_in(currency.iso_code)
-              price.price = (prices[currency.iso_code].blank? ? nil : prices[currency.iso_code])
-              price.save! if price.changed?
-            end
+          next unless variant
+          supported_currencies.each do |currency|
+            price = variant.price_in(currency.iso_code)
+            price.price = (prices[currency.iso_code].blank? ? nil : prices[currency.iso_code])
+            price.save! if price.changed?
           end
         end
         flash[:success] = Spree.t('notice.prices_saved')
