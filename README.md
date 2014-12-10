@@ -1,5 +1,7 @@
-SpreeMultiCurrency
-==================
+# Spree Multi-Currency
+
+[![Build Status](https://travis-ci.org/spree-contrib/spree_multi_currency.svg?branch=2-4-stable)](https://travis-ci.org/spree-contrib/spree_multi_currency)
+[![Code Climate](https://codeclimate.com/github/spree-contrib/spree_multi_currency/badges/gpa.svg)](https://codeclimate.com/github/spree-contrib/spree_multi_currency)
 
 Provides UI to allow configuring multiple currencies in Spree.
 
@@ -9,39 +11,34 @@ This provides 3 preferences:
 * show_currency_selector - Display the currency selector in the main nav bar.  This will only display if there are multiple supported currencies, and allow_currency_change is on.
 * supported_currencies - A comma separated list of
 
-Example
-=======
+---
 
-To install you'll need to add the following to your Gemfile:
+## Installation
 
+Add to your `Gemfile`
 ```ruby
-gem 'spree_multi_currency', github: 'spree/spree_multi_currency', branch: '2-4-stable'
+gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency', branch: '2-4-stable'
 ```
 
+Run
+```
+bundle && bundle exec rails g spree_multi_currency:install
+```
 
-Run:
+---
 
-    $ bundle install
+## Contributing
 
+See corresponding [guidelines][1]
 
-And then run:
+---
 
-    $ rails generate spree_multi_currency:install
+## License
 
+Copyright (c) 2007-2014 [Gregor MacDougall][5], [Spree Commerce][2], and other [contributors][3], released under the [New BSD License][4]
 
-TODO
-====
-
-* The price range filters don't work properly for the non-default currency.
-* Style the currency selector to look better
-* Improve the currency selector with something like select2.
-
-
-Testing
--------
-
-Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
-
-    $ bundle
-    $ bundle exec rake test_app
-    $ bundle exec rspec spec
+[1]: https://github.com/spree-contrib/spree_multi_currency/blob/master/CONTRIBUTING.md
+[2]: https://github.com/spree
+[3]: https://github.com/spree-contrib/spree_multi_currency/contributors
+[4]: https://github.com/spree-contrib/spree_multi_currency/blob/master/LICENSE.md
+[5]: https://github.com/freerunningtech
