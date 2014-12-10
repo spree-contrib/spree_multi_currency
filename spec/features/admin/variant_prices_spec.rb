@@ -20,7 +20,7 @@ RSpec.feature 'Variant Prices', :js do
       fill_in "vp_#{product.master.id}_EUR", with: '21.94'
 
       click_button 'Update'
-      expect(page).to have_content 'Prices Saved'
+      expect(page).to have_content 'Prices successfully saved'
     end
   end
 end
