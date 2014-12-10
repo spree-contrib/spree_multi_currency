@@ -1,4 +1,5 @@
-<!-- insert_bottom 'ul[data-hook="admin_product_tabs"]' -->
+<!-- insert_top 'ul[data-hook="admin_product_tabs"]' -->
 <li<%== ' class="active"' if current == 'Prices' %>>
-  <%= link_to_with_icon 'icon-money', Spree.t(:prices), admin_product_prices_url(@product) %>
+  <% title = Spree.t(:prices) %>
+  <%= link_to_with_icon nil, title, admin_product_prices_path(@product), icon: 'icon glyhicon glyphicon-euro', title: title %>
 </li>
