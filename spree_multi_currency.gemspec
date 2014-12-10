@@ -1,8 +1,13 @@
-# encoding: UTF-8
+# coding: utf-8
+lib = File.expand_path('../lib/', __FILE__)
+$LOAD_PATH.unshift lib unless $LOAD_PATH.include?(lib)
+
+require 'spree_multi_currency/version'
+
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_multi_currency'
-  s.version     = '2.2.0'
+  s.version     = SpreeMultiCurrency.version
   s.summary     = 'Spree Commerce Extension - Provide currency customization'
   s.description = 'http://www.spreecommerce.com'
   s.required_ruby_version = '>= 1.8.7'
