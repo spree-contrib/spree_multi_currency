@@ -1,3 +1,5 @@
+# coding: utf-8
+
 feature 'Order', :js do
   given!(:product) { create(:product) }
 
