@@ -1,4 +1,4 @@
-<!-- insert_bottom '#main-nav-bar' -->
+<!-- insert_bottom '#main-nav-bar' original '838e211947e51dd9e5056f685103c00b2094c5d2' -->
 <% if Spree::Config[:allow_currency_change] && Spree::Config[:show_currency_selector] && supported_currencies.size > 1 %>
   <li id="currency-select" style="float: right; margin-right: 10px;" data-hook>
     <%= form_tag(set_currency_path(format: :html)) do %>
