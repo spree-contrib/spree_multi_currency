@@ -1,11 +1,9 @@
-require 'spec_helper'
-
-describe "Product with prices in multiple currencies" do
+feature "Product with prices in multiple currencies", :js do
 
   context "with USD, EUR and GBP as currencies" do
-    let!(:product) {create(:product)}
+    let!(:product) { create(:product) }
 
-    before do
+    background do
       reset_spree_preferences do |config|
         config.supported_currencies = "USD,EUR,GBP"
         config.allow_currency_change = true
@@ -15,17 +13,17 @@ describe "Product with prices in multiple currencies" do
       create(:price, variant: product.master, currency: 'GBP', amount: 23.00)
     end
 
-    it "can switch by currency", :js => true do
+    scenario "can switch by currency" do
       visit spree.product_path(product)
       expect(page).to have_content("$19.99")
-      select "EUR",:from => "currency"
+      select "EUR",from: "currency"
       expect(page).to have_content("€16.00")
-      select "GBP",:from => "currency"
+      select "GBP",from: "currency"
       expect(page).to have_content("£23.00")
     end
 
     context "and show_currency_selector is false" do
-      before do
+      background do
         reset_spree_preferences do |config|
           config.supported_currencies = "USD,EUR,GBP"
           config.allow_currency_change = true
@@ -33,7 +31,7 @@ describe "Product with prices in multiple currencies" do
         end
       end
 
-      it "will not render the currency selector" do
+      scenario "will not render the currency selector" do
         visit spree.product_path(product)
         expect(page).to_not have_content "Currency"
       end
@@ -41,7 +39,7 @@ describe "Product with prices in multiple currencies" do
 
     context "and allow_currency_change is false" do
       context "and show_currency_selector is true" do
-        before do
+        background do
           reset_spree_preferences do |config|
             config.supported_currencies = "USD,EUR,GBP"
             config.allow_currency_change = false
@@ -49,7 +47,7 @@ describe "Product with prices in multiple currencies" do
           end
         end
 
-        it "will not render the currency selector" do
+        scenario "will not render the currency selector" do
           visit spree.product_path(product)
           expect(page).to_not have_content "Currency"
         end
