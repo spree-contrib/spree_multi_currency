@@ -5,7 +5,7 @@
     <% price = variant.price_in(code) %>
     <div class="form-group">
       <%= label_tag "vp[#{variant.id}][#{code}]", code %>
-      <%= text_field_tag "vp[#{variant.id}][#{code}]", (price ? price.display_amount.money : '') %>
+      <%= text_field_tag "vp[#{variant.id}][#{code}]", (price && price.price ? price.display_amount.money : '') %>
     </div>
   <% end %>
 </fieldset>
