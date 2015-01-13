@@ -7,6 +7,7 @@ Spree::Admin::GeneralSettingsController.class_eval do
   end
 
   private
+
     def update_currency_settings
       params.each do |name, value|
         next unless Spree::Config.has_preference? name
