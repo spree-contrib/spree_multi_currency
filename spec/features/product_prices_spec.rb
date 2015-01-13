@@ -1,3 +1,5 @@
+# coding: utf-8
+
 feature "Product with prices in multiple currencies", :js do
 
   context "with USD, EUR and GBP as currencies" do
