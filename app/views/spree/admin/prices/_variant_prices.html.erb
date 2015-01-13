@@ -1,4 +1,4 @@
-<h5><%= variant.sku %> (<%= variant.is_master? ? t(:master) : variant.options_text %>)</h5>
+<h5><%= variant.sku %> (<%= variant.is_master? ? Spree.t(:master) : variant.options_text %>)</h5>
 <div class="omega two columns">
 <% supported_currencies.each do |currency| %>
   <% price = variant.price_in(currency.iso_code) %>
