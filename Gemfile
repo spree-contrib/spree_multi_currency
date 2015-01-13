@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
-spree_branch = '2-3-stable'
-gem 'spree', github: 'spree/spree', branch: spree_branch
-# Provides basic authentication functionality for testing parts of your engine
-gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: spree_branch
+spree_version = '2-3-stable'
+gem 'spree', github: 'spree/spree', branch: spree_version
+gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: spree_version
 
 gemspec
