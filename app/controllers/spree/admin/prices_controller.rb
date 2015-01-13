@@ -10,7 +10,7 @@ module Spree
           supported_currencies.each do |currency|
             price = variant.price_in(currency.iso_code)
             price.price = (prices[currency.iso_code].blank? ? nil : prices[currency.iso_code].to_money)
-            price.save! if price.changed?
+            price.save! if price.new_record? && price.price || !price.new_record? && price.changed?
           end
         end
         flash[:success] = Spree.t('notice.prices_saved')
