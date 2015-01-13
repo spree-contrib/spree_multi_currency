@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
 
   s.authors   = ['Gregor MacDougall', 'Spree Community']
   s.email     = ['gmacdougall@freerunningtechnologies.com', 'gems@spreecommerce.com']
-  s.homepage  = 'https://github.com/spree-contrib/spree_print_invoice'
+  s.homepage  = 'https://github.com/spree-contrib/spree_multi_currency'
   s.license   = 'BSD-3'
 
   s.files        = `git ls-files`.split("\n")
