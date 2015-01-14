@@ -5,7 +5,7 @@ feature 'Order', :js do
 
   background do
     reset_spree_preferences do |config|
-      config.supported_currencies = "USD,EUR,GBP"
+      config.supported_currencies = 'USD,EUR,GBP'
       config.allow_currency_change = true
       config.show_currency_selector = true
     end
@@ -14,12 +14,12 @@ feature 'Order', :js do
   end
 
   context 'when existing in the cart' do
-    scenario "changes its currency, if user switches the currency." do
+    scenario 'changes its currency, if user switches the currency.' do
       visit spree.product_path(product)
       click_button 'Add To Cart'
-      expect(page).to have_content("$19.99")
-      select "EUR", from: "currency"
-      expect(page).to have_content("€16.00")
+      expect(page).to have_content('$19.99')
+      select 'EUR', from: 'currency'
+      expect(page).to have_content('€16.00')
     end
   end
 end
