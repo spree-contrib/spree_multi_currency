@@ -17,7 +17,7 @@ This provides 3 preferences:
 
 Add to your `Gemfile`
 ```ruby
-gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency', branch: 'master'
+gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency', branch: '3-0-stable'
 ```
 
 Run
