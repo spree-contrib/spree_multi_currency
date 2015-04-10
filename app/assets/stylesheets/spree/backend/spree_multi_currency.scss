@@ -1,0 +1,10 @@
+@import "spree/backend";
+@import "spree/backend/global/variables";
+
+.panel-primary {
+  .panel-heading {
+    .text-muted {
+      color: lighten($brand-primary, 30%);
+    }
+  }
+}
