@@ -1,0 +1,34 @@
+<!-- insert_after '.panel.currency' -->
+<div class="panel panel-default currencies">
+  <div class="panel-heading">
+    <h1 class="panel-title">Currencies</h1>
+  </div>
+
+  <div class="panel-body">
+    <div class="form-group">
+      <label>Supported currencies</label>
+      <input type="text" class="form-control" value="<%= Spree::Config.supported_currencies %>" name="supported_currencies"/>
+      <p class="help-block">A comma separated list of supported currencies</p>
+    </div>
+
+    <div class="form-group">
+      <div class="checkbox">
+        <label>
+          <%= check_box nil, :allow_currency_change, name: :allow_currency_change, checked: Spree::Config.allow_currency_change %>
+          Allow currency change
+        </label>
+        <p class="help-block">Allow users to change their currency via the currency picker.</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="checkbox">
+        <label>
+          <%= check_box nil, :show_currency_selector, name: :show_currency_selector, checked: Spree::Config.show_currency_selector %>
+          Show currency selector
+        </label>
+        <p class="help-block">Display the currency picker in the main nav bar. This will only display if there are multiple supported currencies, and <strong>Allow currency change</strong> option is enabled.</p>
+      </div>
+    </div>
+  </div>
+</div>

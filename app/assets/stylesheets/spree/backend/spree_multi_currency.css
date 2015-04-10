@@ -1,3 +1,16 @@
 /*
 *= require spree/backend
 */
+
+/*
+ * These two definitely belongs to the core rather than this extension
+ */
+
+.help-block {
+	color: #A6A6A6;
+	font-weight: 300;
+}
+
+.checkbox > .help-block {
+	margin-top: 0px;
+}
