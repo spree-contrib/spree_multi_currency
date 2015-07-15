@@ -3,9 +3,16 @@ en:
   spree:
     master: Master
     prices: Prices
-    show_currency_selector: Show Currency Selector
-    supported_currencies: Supported Currencies
-    allow_currency_change: Allow Currency Change
+    currencies: Currencies
+    supported_currencies:
+      short: Supported Currencies
+      long: A comma separated list of supported currencies
+    allow_currency_change:
+      short: Allow Currency Change
+      long: Allow users to change their currency via the currency picker.
+    show_currency_selector:
+      short: Show Currency Selector
+      long_html: Display the currency picker in the main nav bar. This will only display if there are multiple supported currencies, and <strong>Allow currency change</strong> option is enabled.
     variant_prices_search_placeholder: Search for SKU or variant name...
     notice:
       prices_saved: Prices successfully saved
