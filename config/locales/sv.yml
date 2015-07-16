@@ -14,5 +14,5 @@ sv:
       short: Visa valuta väljaren
       long_html: Visa valuta-väljaren i menyn. Detta kommer enbart att visas om det finns flera valutor, och <strong>Tillåt valuta ändring</strong> är aktiverad.
     variant_prices_search_placeholder: Sök för SKU eller variant namn...
-    notice:
+    notice_messages:
       prices_saved: Priserna har nu sparats

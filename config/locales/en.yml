@@ -14,5 +14,5 @@ en:
       short: Show Currency Selector
       long_html: Display the currency picker in the main nav bar. This will only display if there are multiple supported currencies, and <strong>Allow currency change</strong> option is enabled.
     variant_prices_search_placeholder: Search for SKU or variant name...
-    notice:
+    notice_messages:
       prices_saved: Prices successfully saved
