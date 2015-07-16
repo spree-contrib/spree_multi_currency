@@ -3,16 +3,16 @@ sv:
   spree:
     master: Master
     prices: Priser
-    currencies: Currencies
+    currencies: Valutor
     supported_currencies:
       short: Valutor som stöds
-      long: A comma separated list of supported currencies
+      long: En komma separerad lista med valutor som stöds
     allow_currency_change:
       short: Tillåt valuta ändring
-      long: Allow users to change their currency via the currency picker.
+      long: Ge användare mmöjlighet att ändra valuta via valuta-väljaren.
     show_currency_selector:
       short: Visa valuta väljaren
-      long_html: Display the currency picker in the main nav bar. This will only display if there are multiple supported currencies, and <strong>Allow currency change</strong> option is enabled.
-    variant_prices_search_placeholder: Search for SKU or variant name...
+      long_html: Visa valuta-väljaren i menyn. Detta kommer enbart att visas om det finns flera valutor, och <strong>Tillåt valuta ändring</strong> är aktiverad.
+    variant_prices_search_placeholder: Sök för SKU eller variant namn...
     notice:
       prices_saved: Priserna har nu sparats
