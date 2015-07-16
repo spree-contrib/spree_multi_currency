@@ -13,7 +13,7 @@ module Spree
             price.save! if price.new_record? && price.price || !price.new_record? && price.changed?
           end
         end
-        flash[:success] = Spree.t('notice.prices_saved')
+        flash[:success] = Spree.t('notice_messages.prices_saved')
         redirect_to admin_product_path(parent)
       end
     end
