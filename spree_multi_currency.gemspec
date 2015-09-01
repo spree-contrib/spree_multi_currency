@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_runtime_dependency 'spree_core', '~> 3.1.0.beta'
+  s.add_runtime_dependency 'spree_backend', '~> 3.1.0.beta'
 
   s.add_development_dependency 'capybara', '~> 2.4.4'
   s.add_development_dependency 'selenium-webdriver', '>= 2.41'
@@ -33,7 +33,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'sqlite3', '~> 1.3.10'
   s.add_development_dependency 'database_cleaner', '~> 1.4.0'
   s.add_development_dependency 'coffee-rails', '~> 4.0.0'
-  s.add_development_dependency 'sass-rails', '~> 4.0.0'
+  s.add_development_dependency 'sass-rails', '~> 5.0.0'
   s.add_development_dependency 'ffaker', '>= 1.32.1'
   s.add_development_dependency 'guard-rspec', '>= 4.2.0'
   s.add_development_dependency 'pry-rails', '>= 0.3.0'
