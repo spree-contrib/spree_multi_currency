@@ -1,0 +1,18 @@
+---
+pt-BR:
+  spree:
+    master: Principal
+    prices: Preços
+    currencies: Moedas
+    supported_currencies:
+      short: Moedas suportadas
+      long: Uma lista separada por vírgulas com a lista de moedas suportadas
+    allow_currency_change:
+      short: Permitir mudança de moeda
+      long: Permitir usuários mudarem as suas moedas de através da caixa de seleção de moedas.
+    show_currency_selector:
+      short: Mostrar caixa de seleção de moeadas
+      long_html: Mostrar caixa de seleção de moedas na barra de navegação principal. Isso só será exibido somente se multiplas moedas forem específicadas, e se a opção <strong>Permitir mudança de moeda</strong> estiver habilitada.
+    variant_prices_search_placeholder: Procurar por SKU ou nome de variante...
+    notice_messages:
+      prices_saved: Preços salvos com sucesso
