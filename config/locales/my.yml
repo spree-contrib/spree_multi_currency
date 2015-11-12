@@ -1,0 +1,18 @@
+---
+my:
+  spree:
+    master: Utama
+    prices: Harga
+    currencies: Matawang
+    supported_currencies:
+      short: Matawang Yang Disokong
+      long: Senarai penuh matawang yang disokong dipisahkan dengan koma
+    allow_currency_change:
+      short: Membenarkan Penukaran Matawang
+      long: Membenarkan pengguna untuk mengubah matawang melalui pilihan matawang.
+    show_currency_selector:
+      short: Papar Pilihan Matawang
+      long_html: Papar pilihan matawang di menu bar utama. Ianya hanya akan dipaparkan sekiranya terdapat lebih matawang yang disokong, dan pilihan <strong>Membenarkan penukaran matawang</strong> diaktifkan.
+    variant_prices_search_placeholder: Cari SKU atau nama variasi...
+    notice_messages:
+      prices_saved: Harga Telah Berjaya Disimpan
