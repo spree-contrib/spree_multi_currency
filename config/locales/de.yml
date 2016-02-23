@@ -1,0 +1,18 @@
+---
+de:
+  spree:
+    master: Standard
+    prices: Preise
+    currencies: Währungen
+    supported_currencies:
+      short: Unterstützte Währungen
+      long: Eine Komma-separierte Liste der unterstützten Währungen
+    allow_currency_change:
+      short: Erlaube Währungsänderung
+      long: Erlaube es dem Nutzer, die Währung zu ändern.
+    show_currency_selector:
+      short: Zeige Währungsumschalter
+      long_html: Zeige den Währungsumschalter in der Menüleiste. Dieser wird nur angezeigt wenn mehrere unterstützte Währungen gesetzt sind und <string>Erlaube Währungsänderung</string> aktiviert ist.
+    variant_prices_search_placeholder: Search for SKU or variant name...
+    notice_messages:
+      prices_saved: Preise wurden erfolgreich gespeichert.
