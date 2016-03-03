@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'capybara', '~> 2.4.4'
   s.add_development_dependency 'poltergeist', '~> 1.6.0'
   s.add_development_dependency 'factory_girl', '~> 4.4'
-  s.add_development_dependency 'rspec-rails', '~> 3.3.0'
+  s.add_development_dependency 'rspec-rails', '~> 3.4.0'
   s.add_development_dependency 'simplecov', '~> 0.10.0'
   s.add_development_dependency 'sqlite3', '~> 1.3.10'
   s.add_development_dependency 'database_cleaner', '~> 1.4.0'
