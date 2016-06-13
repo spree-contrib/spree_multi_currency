@@ -15,15 +15,27 @@ This provides 3 preferences:
 
 ## Installation
 
-Add to your `Gemfile`
-```ruby
-gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency', branch: 'master'
-```
+1. Add this extension to your Gemfile with this line:
+  ```ruby
+  gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency', branch: 'X-X-stable'
+  ```
 
-Run
-```
-bundle && bundle exec rails g spree_multi_currency:install
-```
+  The `branch` option is important: it must match the version of Spree you're using.
+  For example, use `3-0-stable` if you're using Spree `3-0-stable` or any `3.0.x` version.
+
+2. Install the gem using Bundler:
+  ```ruby
+  bundle install
+  ```
+
+3. Copy & run migrations
+  ```ruby
+  bundle exec rails g spree_multi_currency:install
+  ```
+
+4. Restart your server
+
+  If your server was running, restart it so that it can find the assets properly.
 
 ---
 
