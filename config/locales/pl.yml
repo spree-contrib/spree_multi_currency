@@ -1,0 +1,19 @@
+
+---
+pl:
+  spree:
+    master: Główny
+    prices: Ceny
+    currencies: Waluty
+    supported_currencies:
+      short: Obsługiwane Waluty
+      long: Lista obsługiwanych walut oddzielonych przecinkami
+    allow_currency_change:
+      short: Pozwól Zmieniać Walutę
+      long: Zezwalaj użytkownikom na zmianę waluty.
+    show_currency_selector:
+      short: Pokaż Listę Walut
+      long_html: Wyświetla listę walut do wyboru w menu głównej nawigacji. Lista będzie widoczna jedynie gdy istnieje wiele obsługiwanych walut i opcja <strong>Pozwól Zmieniać Walutę</strong> jest włączona.
+    variant_prices_search_placeholder: Wyszukaj wg. SKU lub nazwy wariantu...
+    notice_messages:
+      prices_saved: Ceny zachowane pomyślnie
