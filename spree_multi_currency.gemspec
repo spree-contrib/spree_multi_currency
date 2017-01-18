@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.version     = SpreeMultiCurrency.version
   s.summary     = 'Provide currency customization for Spree Commerce.'
   s.description = s.summary
-  s.required_ruby_version = '>= 2.1.0'
+  s.required_ruby_version = '>= 2.2.4'
 
   s.authors   = ['Gregor MacDougall', 'Spree Community']
   s.email     = ['gmacdougall@freerunningtechnologies.com', 'gems@spreecommerce.com']
@@ -37,4 +37,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'guard-rspec'
   s.add_development_dependency 'pry-rails'
   s.add_development_dependency 'rubocop'
+  s.add_development_dependency 'pg'
+  s.add_development_dependency 'mysql2'
 end
