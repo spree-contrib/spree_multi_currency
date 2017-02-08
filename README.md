@@ -16,6 +16,15 @@ This provides 3 preferences:
 ## Installation
 
 1. Add this extension to your Gemfile with this line:
+
+  #### Spree >= 3.1
+
+  ```ruby
+  gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency'
+  ```
+
+  #### Spree 3.0 and Spree 2.x
+
   ```ruby
   gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency', branch: 'X-X-stable'
   ```
