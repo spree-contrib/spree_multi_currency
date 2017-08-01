@@ -14,19 +14,19 @@ RSpec.feature 'Updating currencies settings' do
 
     # Test initial state
     expect(find_field('supported_currencies').value).to eq 'USD'
-    expect(find('#_allow_currency_change')).to_not be_checked
-    expect(find('#_show_currency_selector')).to_not be_checked
+    expect(find('#allow_currency_change')).to_not be_checked
+    expect(find('#show_currency_selector')).to_not be_checked
 
     # Interact with the form
     fill_in 'supported_currencies', with: 'USD,PLN'
-    find(:css, '#_allow_currency_change').set(true)
-    find(:css, '#_show_currency_selector').set(true)
+    find(:css, '#allow_currency_change').set(true)
+    find(:css, '#show_currency_selector').set(true)
     click_button 'Update'
 
     # Test final state
     expect(page).to have_content 'General Settings has been successfully updated!'
     expect(find_field('supported_currencies').value).to eq 'USD,PLN'
-    expect(find('#_allow_currency_change')).to be_checked
-    expect(find('#_show_currency_selector')).to be_checked
+    expect(find('#allow_currency_change')).to be_checked
+    expect(find('#show_currency_selector')).to be_checked
   end
 end
