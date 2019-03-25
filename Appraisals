@@ -6,8 +6,8 @@ appraise 'spree-3-5' do
   gem 'spree', '~> 3.5.0'
 end
 
-appraise 'spree-3-6' do
-  gem 'spree', '~> 3.6.0'
+appraise 'spree-3-7' do
+  gem 'spree', '~> 3.7.0'
 end
 
 appraise 'spree-master' do
