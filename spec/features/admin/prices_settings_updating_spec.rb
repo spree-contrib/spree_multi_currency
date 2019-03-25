@@ -13,7 +13,6 @@ RSpec.feature 'Updating currencies settings' do
     visit spree.edit_admin_general_settings_path
 
     # Test initial state
-    expect(page).to have_content 'Choose Currency'
     expect(find_field('currency').value).to eq 'USD'
 
     # Interact with the form
