@@ -32,6 +32,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'factory_bot', '~> 4.7'
   s.add_development_dependency 'ffaker'
   s.add_development_dependency 'guard-rspec'
+  s.add_development_dependency 'sqlite3', '~> 1.3.6'
   s.add_development_dependency 'mysql2', '~> 0.3.18'
   s.add_development_dependency 'poltergeist'
   s.add_development_dependency 'pg', '~> 0.18'
@@ -42,5 +43,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rubocop'
   s.add_development_dependency 'selenium-webdriver'
   s.add_development_dependency 'simplecov'
-  s.add_development_dependency 'sqlite3', '~> 1.3.6'
 end
