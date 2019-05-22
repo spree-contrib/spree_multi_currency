@@ -1,4 +1,6 @@
-RSpec.feature 'Currencies settings presence' do
+require 'spec_helper'
+
+feature 'Currencies settings presence', js: true do
   stub_authorization!
 
   context 'when accessing general settings page' do

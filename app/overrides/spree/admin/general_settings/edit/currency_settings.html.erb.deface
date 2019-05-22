@@ -1,4 +1,4 @@
-<!-- insert_after '.panel.currency' -->
+<!-- insert_after '.form-group' -->
 <div class="panel panel-default currencies">
   <div class="panel-heading">
     <h1 class="panel-title"><%= Spree.t(:currencies) %></h1>
