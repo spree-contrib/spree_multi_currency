@@ -1,4 +1,6 @@
-RSpec.feature 'Order', :js do
+require 'spec_helper'
+
+describe 'Order', :js do
   given!(:product) { create(:product) }
 
   background do
@@ -12,7 +14,7 @@ RSpec.feature 'Order', :js do
   end
 
   context 'when existing in the cart' do
-    scenario 'changes its currency, if user switches the currency.' do
+    it 'changes its currency, if user switches the currency.' do
       visit spree.product_path(product)
       click_button 'Add To Cart'
       expect(page).to have_text '$19.99'
