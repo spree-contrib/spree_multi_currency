@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe 'Order', :js do
   given!(:product) { create(:product) }
 
