@@ -1,4 +1,4 @@
-feature 'Variant Prices', js: true do
+RSpec.feature 'Variant Prices', :js do
   stub_authorization!
 
   given!(:product) { create(:product) }

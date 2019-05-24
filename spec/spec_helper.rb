@@ -16,9 +16,6 @@ rescue LoadError
   exit
 end
 
-require 'selenium-webdriver'
-require 'capybara/rspec'
-require 'capybara/rails'
 require 'rspec/rails'
 require 'ffaker'
 require 'pry'

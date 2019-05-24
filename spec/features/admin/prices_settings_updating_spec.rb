@@ -1,4 +1,4 @@
-feature 'Updating currencies settings', js: true do
+RSpec.feature 'Updating currencies settings' do
   stub_authorization!
 
   background do

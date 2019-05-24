@@ -1,4 +1,4 @@
-feature 'Product with prices in multiple currencies', js: true do
+RSpec.feature 'Product with prices in multiple currencies' do
   context 'with USD, EUR and GBP as currencies' do
     given!(:product) { create(:product) }
 

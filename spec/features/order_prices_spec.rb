@@ -1,4 +1,4 @@
-feature 'Order', js: true do
+RSpec.feature 'Order', :js do
   given!(:product) { create(:product) }
 
   background do
