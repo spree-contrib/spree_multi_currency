@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'factory_bot', '~> 4.7'
   s.add_development_dependency 'ffaker'
   s.add_development_dependency 'guard-rspec'
-  s.add_development_dependency 'mysql2', '~> 0.3.18'
+  s.add_development_dependency 'mysql2'
   s.add_development_dependency 'poltergeist'
   s.add_development_dependency 'pg', '~> 0.18'
   s.add_development_dependency 'pry-rails'

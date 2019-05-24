@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 feature 'Updating currencies settings', js: true do
   stub_authorization!
 

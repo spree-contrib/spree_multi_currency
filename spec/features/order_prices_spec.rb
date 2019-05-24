@@ -1,4 +1,4 @@
-describe 'Order', :js do
+feature 'Order', js: true do
   given!(:product) { create(:product) }
 
   background do
@@ -12,7 +12,7 @@ describe 'Order', :js do
   end
 
   context 'when existing in the cart' do
-    it 'changes its currency, if user switches the currency.' do
+    scenario 'changes its currency, if user switches the currency.' do
       visit spree.product_path(product)
       click_button 'Add To Cart'
       expect(page).to have_text '$19.99'
