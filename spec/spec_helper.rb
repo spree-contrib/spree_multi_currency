@@ -16,8 +16,11 @@ rescue LoadError
   exit
 end
 
-require "spree/testing_support/capybara_ext"
+require 'spree/testing_support/capybara_ext'
 require 'selenium-webdriver'
+require 'capybara-screenshot/rspec'
+require 'capybara/rspec'
+require 'capybara/rails'
 require 'rspec/rails'
 require 'ffaker'
 require 'pry'
