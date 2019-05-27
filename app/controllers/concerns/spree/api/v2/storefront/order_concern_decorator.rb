@@ -1,6 +1,6 @@
 # Replaces currency in find_spree_current_order with actualy used currency
 # frozen_string_literal: true
-module OrderConcernDecorator.class_eval do
+module OrderConcernDecorator
 
   private
 
@@ -28,4 +28,4 @@ module OrderConcernDecorator.class_eval do
   end
 end
 
-Spree::Api::V2::Storefront::OrderConcern.prepend OrderConcernDecorator if Spree.version.to_f >= 3.7
+(Spree::Api::V2::Storefront::OrderConcern.prepend OrderConcernDecorator) if Spree.version.to_f >= 3.7
