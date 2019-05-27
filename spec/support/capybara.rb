@@ -9,3 +9,7 @@ Capybara.register_driver :chrome do |app|
 end
 
 Capybara.javascript_driver = :chrome
+
+RSpec.configure do |config|
+  config.include Spree::TestingSupport::CapybaraHelpers, type: :feature
+end
