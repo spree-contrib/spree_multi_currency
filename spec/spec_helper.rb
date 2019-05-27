@@ -33,8 +33,6 @@ RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
     expectations.syntax = :expect
   end
-  config.disable_monkey_patching!
-  config.alias_example_group_to :feature
 end
 
 Dir[File.join(File.dirname(__FILE__), 'support/**/*.rb')].each { |file| require file }
