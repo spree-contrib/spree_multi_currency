@@ -19,7 +19,6 @@ end
 require 'rspec/rails'
 require 'ffaker'
 require 'pry'
-require 'spree/testing_support/capybara_ext'
 
 RSpec.configure do |config|
   config.mock_with :rspec

@@ -1,7 +1,6 @@
 # Replaces currency in find_spree_current_order with actualy used currency
 # frozen_string_literal: true
 module OrderConcernDecorator
-
   private
 
   def find_spree_current_order
