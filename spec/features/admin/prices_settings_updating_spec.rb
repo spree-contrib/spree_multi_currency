@@ -25,7 +25,6 @@ RSpec.feature 'Updating currencies settings' do
 
     # Test final state
     expect(page).to have_content 'General Settings has been successfully updated!'
-    CapybaraHelper.wait_for { !page.has_text?('USD,PLN') }
     expect(find_field('supported_currencies').value).to eq 'USD,PLN'
     expect(find('#allow_currency_change')).to be_checked
     expect(find('#show_currency_selector')).to be_checked
