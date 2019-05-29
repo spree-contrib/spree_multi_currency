@@ -25,6 +25,8 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'spree_backend', '>= 3.1.0', '< 4.0'
   s.add_runtime_dependency 'spree_extension'
 
+  s.add_dependency 'deface'
+
   s.add_development_dependency 'appraisal'
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'database_cleaner'
@@ -35,6 +37,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'mysql2', '~> 0.3.18'
   s.add_development_dependency 'poltergeist'
   s.add_development_dependency 'pg', '~> 0.18'
+  s.add_development_dependency 'pry'
   s.add_development_dependency 'pry-rails'
   s.add_development_dependency 'puma'
   s.add_development_dependency 'sass-rails'
