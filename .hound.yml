@@ -2,6 +2,7 @@
 # Too picky.
 LineLength:
   Enabled: false
+  Max: 100
 
 # This should truly be on for well documented gems.
 Documentation:
