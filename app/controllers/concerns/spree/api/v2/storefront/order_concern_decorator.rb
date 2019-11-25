@@ -36,4 +36,4 @@ module Spree
   end
 end
 
-(::Spree::Api::V2::Storefront::OrderConcern.prepend(Spree::Api::V2::Storefront::OrderConcernDecorator)) if Spree.version.to_f >= 3.7
+::Spree::Api::V2::Storefront::OrderConcern.prepend(Spree::Api::V2::Storefront::OrderConcernDecorator) if Spree.version.to_f >= 3.7

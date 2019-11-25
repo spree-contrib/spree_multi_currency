@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module Spree
   module LineItemDecorator
     def update_price
