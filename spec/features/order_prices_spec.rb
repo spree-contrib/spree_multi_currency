@@ -7,8 +7,8 @@ RSpec.feature 'Order', :js do
       config.allow_currency_change  = true
       config.show_currency_selector = true
     end
-    create(:price, variant: product.master, currency: 'EUR', amount: 16.00)
-    create(:price, variant: product.master, currency: 'GBP', amount: 23.00)
+    create(:price, variant: product.master, currency: 'EUR', price: 16.00)
+    create(:price, variant: product.master, currency: 'GBP', price: 23.00)
   end
 
   context 'when existing in the cart' do
