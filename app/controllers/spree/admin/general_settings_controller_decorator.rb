@@ -1,7 +1,9 @@
 module Spree
   module Admin
-    GeneralSettingsController.class_eval do
-      before_action :update_currency_settings, only: :update
+    module GeneralSettingsControllerDecorator
+      def self.preneded(base)
+        base.before_action :update_currency_settings, only: :update
+      end
 
       def render(*args)
         @preferences_currency |= [:allow_currency_change, :show_currency_selector, :supported_currencies]
@@ -22,3 +24,5 @@ module Spree
     end
   end
 end
+
+::Spree::Admin::GeneralSettingsController.prepend(Spree::Admin::GeneralSettingsControllerDecorator)

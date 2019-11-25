@@ -1,7 +1,11 @@
 module Spree
-  AppConfiguration.class_eval do
-    preference :allow_currency_change,  :boolean, default: false
-    preference :show_currency_selector, :boolean, default: false
-    preference :supported_currencies,   :string,  default: 'USD'
+  module AppConfigurationDecorator
+    def self.prepended(base)
+      base.preference :allow_currency_change,  :boolean, default: false
+      base.preference :show_currency_selector, :boolean, default: false
+      base.preference :supported_currencies,   :string,  default: 'USD'
+    end
   end
 end
+
+::Spree::AppConfiguration.prepend(Spree::AppConfigurationDecorator)
