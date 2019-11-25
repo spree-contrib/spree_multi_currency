@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_runtime_dependency 'spree_backend', '>= 3.1.0', '< 4.0'
+  s.add_runtime_dependency 'spree_backend', '>= 3.1.0', '< 5.0'
   s.add_runtime_dependency 'spree_extension'
   s.add_dependency 'deface', '~> 1.0'
 
@@ -33,6 +33,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'factory_bot', '~> 4.7'
   s.add_development_dependency 'ffaker'
   s.add_development_dependency 'guard-rspec'
+  s.add_development_dependency 'sqlite3', '~> 1.3.6'
   s.add_development_dependency 'mysql2', '~> 0.3.18'
   s.add_development_dependency 'poltergeist'
   s.add_development_dependency 'pg', '~> 0.18'
