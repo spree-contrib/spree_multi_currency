@@ -7,6 +7,7 @@ script:
 
 addons:
   chrome: stable
+  postgresql: 9.4
 
 env:
   - DB=mysql
