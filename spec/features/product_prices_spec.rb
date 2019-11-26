@@ -14,11 +14,12 @@ RSpec.feature 'Product with prices in multiple currencies' do
 
     scenario 'can switch by currency', :js do
       visit spree.product_path(product)
-      expect(page).to have_text '$19.99'
+      expect(page).to have_current_path(spree.product_path(product))
+      expect(page).to have_css('.lead.price.selling', text: '$19.99')
       select 'EUR', from: 'currency'
-      expect(page).to have_text '€16.00'
+      expect(page).to have_css('.lead.price.selling', text: '€16.00')
       select 'GBP', from: 'currency'
-      expect(page).to have_text '£23.00'
+      expect(page).to have_css('.lead.price.selling', text: '£23.00')
     end
 
     context 'and :show_currency_selector is false' do
@@ -30,9 +31,10 @@ RSpec.feature 'Product with prices in multiple currencies' do
         end
       end
 
-      scenario 'will not render the currency selector' do
+      scenario 'will not render the currency selector', :js do
         visit spree.product_path(product)
-        expect(page).to_not have_text 'Currency'
+        expect(page).to have_current_path(spree.product_path(product))
+        expect(page).to_not have_css('select#currency')
       end
     end
 
@@ -48,7 +50,8 @@ RSpec.feature 'Product with prices in multiple currencies' do
 
         scenario 'will not render the currency selector' do
           visit spree.product_path(product)
-          expect(page).to_not have_text 'Currency'
+          expect(page).to have_current_path(spree.product_path(product))
+          expect(page).to_not have_css('select#currency')
         end
       end
     end

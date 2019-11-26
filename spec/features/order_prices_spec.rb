@@ -15,9 +15,9 @@ RSpec.feature 'Order', :js do
     scenario 'changes its currency, if user switches the currency.' do
       visit spree.product_path(product)
       click_button 'Add To Cart'
-      expect(page).to have_text '$19.99'
+      expect(page).to have_css('#link-to-cart', text: '$19.99')
       select 'EUR', from: 'currency'
-      expect(page).to have_text '€16.00'
+      expect(page).to have_css('#link-to-cart', text: '€16.00')
     end
   end
 end
