@@ -9,10 +9,9 @@ module SpreeMultiCurrency
 
   module VERSION
     MAJOR = 3
-    MINOR = 3
+    MINOR = 4
     TINY  = 0
-    PRE   = 'rc1'.freeze
 
-    STRING = [MAJOR, MINOR, TINY, PRE].compact.join('.')
+    STRING = [MAJOR, MINOR, TINY].compact.join('.')
   end
 end
