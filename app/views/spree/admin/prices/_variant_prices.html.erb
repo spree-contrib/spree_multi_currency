@@ -8,14 +8,14 @@
 				<col style="width: 20%" />
 			</colgroup>
 			<thead>
-				<tr data-hook="products_header">
+				<tr data-hook="variant_prices_header">
 					<th><%= Spree.t(:options) %></th>
 					<th><%= Spree.t(:sku) %></th>
 					<th><%= Spree.t(:currency) %></th>
 					<th><%= Spree.t(:price) %></th>
 				</tr>
 			</thead>
-			<tbody id="variant-prices">
+			<tbody id="variant-prices" data-hook="variant_prices_body">
 				<% supported_currencies.each do |currency| %>
 					<% code  = currency.iso_code %>
 					<% price = variant.price_in(code) %>

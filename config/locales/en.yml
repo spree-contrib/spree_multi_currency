@@ -1,6 +1,9 @@
 ---
 en:
   spree:
+    options: Options
+    sku: Sku
+    currency: Currency
     master: Master
     prices: Prices
     currencies: Currencies
