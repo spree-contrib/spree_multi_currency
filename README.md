@@ -1,3 +1,6 @@
+# ⚠️ Deprecation notice ⚠️
+Since [Spree 4.2](https://guides.spreecommerce.org/release_notes/4_2_0.html) this extension is deprecated and not needed. Multi Currency was merged into Spree core.
+
 # Spree Multi-Currency
 
 [![Build Status](https://travis-ci.org/spree-contrib/spree_multi_currency.svg?branch=master)](https://travis-ci.org/spree-contrib/spree_multi_currency)
